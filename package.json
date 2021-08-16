@@ -4,7 +4,8 @@
   "description": "Personal portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/** -p 14242",
+    "build": "parcel build src/**"
   },
   "repository": {
     "type": "git",
