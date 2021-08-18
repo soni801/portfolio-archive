@@ -8,7 +8,9 @@
         2.2 Tags
         2.3 Titles
         2.4 Separators
-    3 About me section
+    3 Page sections
+        3.1 Introduction section
+        3.2 About me section
  */
 
 // 1.1 Variables
@@ -84,7 +86,26 @@ hr
     border-top: 1px solid rgba($dark, .6);
 }
 
-// 3 About me section
+// 3.1 Introduction section
+#introduction
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+
+    #introduction-text
+    {
+        width: 40ch;
+    }
+
+    img
+    {
+        width: 50ch;
+    }
+}
+
+// 3.2 About me section
 #about-me
 {
     width: 70ch;
