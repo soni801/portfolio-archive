@@ -100,7 +100,8 @@ hr
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1300px;
+    width: 80vw;
+    max-width: 75rem;
 
     #introduction-text
     {
@@ -120,11 +121,17 @@ hr
         text-transform: uppercase;
         font-weight: 600;
     }
+
+    @media (max-width: 50rem)
+    {
+        flex-direction: column;
+    }
 }
 
 // 4.2 About me section
 #about-me
 {
-    width: 70ch;
+    padding: 2ch;
+    max-width: 70ch;
     text-align: center;
 }
