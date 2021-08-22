@@ -13,3 +13,16 @@ $("#header").load("/sections/header.html", function ()
         });
     });
 });
+
+$("#cookie-checkmark").load("/assets/images/checkmark.svg", function ()
+{
+    document.querySelector("#cookie-checkmark").addEventListener("click", function ()
+    {
+        document.querySelector("#cookie").style.opacity = "0";
+        document.querySelector("#cookie").style.transform = "translateX(-1rem)";
+        setTimeout(function ()
+        {
+            document.querySelector("#cookie").style.display = "none";
+        }, 300);
+    });
+});
