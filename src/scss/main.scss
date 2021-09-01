@@ -13,6 +13,7 @@
     4 Specific sections
         4.1 Introduction section
         4.2 About me section
+    5 Useless elements
  */
 
 // 1.1 Variables
@@ -80,18 +81,39 @@ hr
 #header
 {
     display: flex;
-    gap: 5ch;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
     padding: 1rem;
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: .15ch;
     text-transform: uppercase;
 
+    div
+    {
+        display: none;
+        gap: 5ch;
+    }
+
     a
     {
         color: $dark;
         text-decoration: none;
         transition: 100ms ease;
+        cursor: pointer;
+    }
+
+    span
+    {
+        display: flex;
+
+        svg
+        {
+            height: 2rem;
+            fill: $dark;
+        }
     }
 
     .highlighted
@@ -164,4 +186,10 @@ hr
     padding: 2ch;
     max-width: 70ch;
     text-align: center;
+}
+
+// 5 Useless elements
+.useless > * > *
+{
+    fill: none;
 }
