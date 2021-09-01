@@ -25,13 +25,42 @@ $("#header").load("/sections/header.html", function ()
     // Set pages visible by default
     document.querySelector("#header div").classList.add("visible");
 
-    // Set home page highlighted TODO: Set highlights in all headers by default
-    document.querySelector("#header a").classList.add("highlighted");
-    document.querySelectorAll("#header a").forEach(function (e)
+    // Set initial highlighting
+    // TODO: Improve header highlighting code
+    document.querySelector("#header #pages a").classList.add("highlighted");
+    document.querySelector("#header #languages a").classList.add("highlighted");
+    document.querySelector("#header #themes a").classList.add("highlighted");
+
+    // Register click listeners
+    document.querySelectorAll("#header #pages a").forEach(function (e)
     {
         e.addEventListener("click", function ()
         {
-            document.querySelectorAll("#header a").forEach(function (e)
+            document.querySelectorAll("#header #pages a").forEach(function (e)
+            {
+                e.classList.remove("highlighted");
+            });
+            e.classList.add("highlighted");
+        });
+    });
+
+    document.querySelectorAll("#header #languages a").forEach(function (e)
+    {
+        e.addEventListener("click", function ()
+        {
+            document.querySelectorAll("#header #languages a").forEach(function (e)
+            {
+                e.classList.remove("highlighted");
+            });
+            e.classList.add("highlighted");
+        });
+    });
+
+    document.querySelectorAll("#header #themes a").forEach(function (e)
+    {
+        e.addEventListener("click", function ()
+        {
+            document.querySelectorAll("#header #themes a").forEach(function (e)
             {
                 e.classList.remove("highlighted");
             });
