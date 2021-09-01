@@ -95,6 +95,11 @@ hr
     {
         display: none;
         gap: 5ch;
+
+        &.visible
+        {
+            display: flex;
+        }
     }
 
     a
@@ -108,6 +113,7 @@ hr
     span
     {
         display: flex;
+        cursor: pointer;
 
         svg
         {
@@ -189,7 +195,9 @@ hr
 }
 
 // 5 Useless elements
-.useless > * > *
+#header .useless, // Fix cursor in header
+.useless > * > * // Fix color in header
 {
     fill: none;
+    cursor: unset;
 }
