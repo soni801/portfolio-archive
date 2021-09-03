@@ -93,12 +93,13 @@ hr
 
     div
     {
-        display: none;
+        opacity: 0;
         gap: 5ch;
+        transition: 200ms ease;
 
         &.visible
         {
-            display: flex;
+            opacity: 1;
         }
     }
 

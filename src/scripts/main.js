@@ -7,22 +7,40 @@ $("#header").load("/sections/header.html", function ()
     $(".useless").load("/assets/images/dots.svg"); // Useless button for correct spacing
     $("#dots").load("/assets/images/dots.svg", function ()
     {
+        // TODO: Improve this code - e.g. replace only the links in the header instead of the entire div
         document.querySelector("#dots").addEventListener("click", function ()
         {
             if (selectedHeader++ === 2) selectedHeader = 0;
+            console.log(selectedHeader);
             let temp = 0;
             document.querySelectorAll("#header div").forEach(function (e)
             {
-                e.classList.remove("visible");
-                if (temp++ === selectedHeader)
+                if (temp === selectedHeader -1 || (temp === 2 && selectedHeader === 0))
                 {
-                    e.classList.add("visible");
+                    e.classList.remove("visible");
+                    setTimeout(function ()
+                    {
+                        e.style.display = "none";
+
+                        let next = temp === 2 ? document.querySelectorAll("#header div")[0] : document.querySelectorAll("#header div")[temp + 1];
+                        next.style.display = "flex";
+                        setTimeout(function ()
+                        {
+                            next.classList.add("visible");
+                        }, 50);
+                    }, 200);
                 }
+                else temp++;
             });
         });
     });
 
     // Set pages visible by default
+    document.querySelectorAll("#header div").forEach(function (e)
+    {
+        e.style.display = "none";
+    });
+    document.querySelector("#header div").style.display = "flex";
     document.querySelector("#header div").classList.add("visible");
 
     // Set initial highlighting
