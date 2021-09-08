@@ -148,6 +148,8 @@ hr
     font-size: .9rem;
     transition: 300ms ease;
 
+    p { margin: 0; }
+
     #cookie-checkmark
     {
         width: 2rem;
@@ -164,6 +166,7 @@ hr
     justify-content: space-between;
     width: 80vw;
     max-width: 75rem;
+    margin-top: 3rem;
 
     #introduction-paragraph
     {
