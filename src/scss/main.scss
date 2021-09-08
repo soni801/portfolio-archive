@@ -165,24 +165,57 @@ hr
     width: 80vw;
     max-width: 75rem;
 
-    #introduction-text
+    #introduction-paragraph
     {
         width: 40ch;
+
+        #about-me-button
+        {
+            padding: .6em 1.3em;
+            background: $accent;
+            color: $light;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a + h6
+        {
+            $dark: rgba($dark, .4);
+
+            margin-top: 3rem;
+            color: $dark;
+
+            &::before { border-color: $dark; }
+        }
+
+        #social-icons
+        {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: .5rem;
+
+            a
+            {
+                $accent: rgba($accent, .4);
+
+                display: flex;
+                height: 2.3rem;
+                aspect-ratio: 1;
+                fill: $accent;
+
+                &#social-youtube #cutout { fill: $light; }
+                &#social-graphide { stroke: $accent; }
+            }
+        }
+
+
     }
 
     img
     {
         width: 50ch;
-    }
-
-    a
-    {
-        padding: .6em 1.3em;
-        background: $accent;
-        color: $light;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 600;
     }
 
     @media (max-width: 50rem)

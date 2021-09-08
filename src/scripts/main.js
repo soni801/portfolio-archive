@@ -4,14 +4,13 @@ let selectedHeader = 0;
 $("#header").load("/sections/header.html", function ()
 {
     // Load more options button
-    $(".useless").load("/assets/images/dots.svg"); // Useless button for correct spacing
-    $("#dots").load("/assets/images/dots.svg", function ()
+    $(".useless").load("/assets/icons/dots.svg"); // Useless button for correct spacing
+    $("#dots").load("/assets/icons/dots.svg", function ()
     {
         // TODO: Improve this code - e.g. replace only the links in the header instead of the entire div
         document.querySelector("#dots").addEventListener("click", function ()
         {
             if (selectedHeader++ === 2) selectedHeader = 0;
-            console.log(selectedHeader);
             let temp = 0;
             document.querySelectorAll("#header div").forEach(function (e)
             {
@@ -87,8 +86,15 @@ $("#header").load("/sections/header.html", function ()
     });
 });
 
+// Load social icons
+$("#social-github").load("/assets/icons/brands/github.svg");
+$("#social-twitch").load("/assets/icons/brands/twitch.svg");
+$("#social-twitter").load("/assets/icons/brands/twitter.svg");
+$("#social-youtube").load("/assets/icons/brands/youtube.svg");
+$("#social-graphide").load("/assets/icons/brands/graphide.svg");
+
 // Load checkmark in cookie consent
-$("#cookie-checkmark").load("/assets/images/checkmark.svg", function ()
+$("#cookie-checkmark").load("/assets/icons/checkmark.svg", function ()
 {
     document.querySelector("#cookie-checkmark").addEventListener("click", function ()
     {
