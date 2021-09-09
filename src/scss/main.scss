@@ -13,6 +13,7 @@
     4 Specific sections
         4.1 Introduction section
         4.2 About me section
+        4.3 Recent projects
     5 Useless elements
  */
 
@@ -233,6 +234,22 @@ hr
     padding: 2ch;
     max-width: 70ch;
     text-align: center;
+}
+
+// 4.3 Recent projects
+#recent-projects
+{
+    align-self: flex-start;
+
+    #school-projects, #personal-projects
+    {
+        display: flex;
+
+        div
+        {
+            width: 100vw;
+        }
+    }
 }
 
 // 5 Useless elements
