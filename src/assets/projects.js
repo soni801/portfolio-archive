@@ -1,7 +1,7 @@
 export const projects = {
   "school": [
     {
-      "image": "/skole/assets/verstasjon.jpg?v=20210521",
+      "image": "/skole/assets/weather-station.jpg?v=20210521",
       "subject": "Konseptutvikling og programmering + Teknologiforståelse",
       "title": "Værstasjon",
       "content": "Her skulle vi måle forskjellige værdata som temperatur, lufttrykk og luftfuktighet, og laste det opp til en database.",
@@ -15,7 +15,7 @@ export const projects = {
       "date": "26. mar. 2021"
     },
     {
-      "image": "/skole/assets/rpi.jpg?v=20210521",
+      "image": "/skole/assets/raspberry-pi.jpg?v=20210521",
       "subject": "Teknologiforståelse",
       "title": "Raspberry Pi",
       "content": "Her skulle vi sette opp og teste forskjellige ting med en Raspberry Pi minidatamaskin. Vi koblet for eksempel opp lys og programmerte de til å lyse forskjellig over tid eller hvis man trykket på knapper.",
@@ -29,7 +29,7 @@ export const projects = {
       "date": "22. feb. 2021"
     },
     {
-      "image": "/skole/assets/koronadagbok.jpg?v=20210521",
+      "image": "/skole/assets/covid-diary.jpg?v=20210521",
       "subject": "Produksjon og historiefortelling",
       "title": "Koronadagbok",
       "content": "Vi skulle lage en film der vi dokumenterte livet vårt gjennom en uke under koronasituasjonen. Den inkluderer skolehverdagen, praksis i bedrift, og hva jeg gjør på fritiden.",
@@ -50,28 +50,28 @@ export const projects = {
       "date": "9. des. 2020"
     },
     {
-      "image": "/skole/assets/reklamefilm.jpg?v=20210521",
+      "image": "/skole/assets/advertisement.jpg?v=20210521",
       "subject": "Konseptutvikling og programmering + Produksjon og historiefortelling",
       "title": "Reklamefilm",
       "content": "Vi skulle lage en reklamefilm for å reklamere for linjen vi går på. Her viste vi fram litt fra hvert fag, litt fra skolefrokosten og litt fra Kaffe Diem. Vi gjorde også et par intervuer med elever i klassen.",
       "date": "17. nov. 2020"
     },
     {
-      "image": "/skole/assets/supermat.jpg?v=20210521",
+      "image": "/skole/assets/superfood.jpg?v=20210521",
       "subject": "Naturfag",
       "title": "Supermat",
       "content": "Her skulle vi lage en fiksjonell \"supermat\" som inneholdt akkurat riktig mengde næringsstoffer og mineraler, og som var bærekraftig. Jeg lagde min 'råbar'.",
       "date": "30. okt. 2020"
     },
     {
-      "image": "/skole/assets/bildeserie.jpg?v=20210521",
+      "image": "/skole/assets/photo-series.jpg?v=20210521",
       "subject": "Teknologiforståelse + Produksjon og historiefortelling",
       "title": "Bildeserie",
       "content": "Denne oppgaven gikk ut på å fortelle en historie ved hjelp av bilder. Vi skulle både ta og redigere 4 bilder for å kunne fortelle en meningsfull historie ut i fra dem. Jeg ville prøve å fortelle en historie om forsøpling, men det er selvfølgelig opp til enkeltpersonen å tolke historien.",
       "date": "18. sep. 2020"
     },
     {
-      "image": "/skole/assets/nettside.jpg?v=20210521",
+      "image": "/skole/assets/website.jpg?v=20210521",
       "subject": "Konseptutvikling og programmering",
       "title": "Nettside",
       "content": "Vi skulle lage en nettside for å vise hva vi gjør på linjen, som en litt annerledes skrivebok. Det er den nettsiden du er på nå. Denne nettsiden har gått gjennom mange iterasjoner og har til slutt landet på det den er i dag. Dette er høyst sannsynlig det skolerelaterte prosjektet jeg har jobbet mest på.",
@@ -95,7 +95,7 @@ export const projects = {
       "content": "Line Rider er et spill der man produserer videoer av en person som kjører på kjelke på linjer man selv har tegnet. Du kan finne mine Line Rider videoer på min YouTube-kanal."
     },
     {
-      "image": "/fritid/assets/kubing.jpg?v=20210521",
+      "image": "/fritid/assets/cubing.jpg?v=20210521",
       "title": "Kubing",
       "content": "Kubing går ut på å løse en Rubik's kube så fort som mulig. Min rekord er 12.89 sekunder."
     }
