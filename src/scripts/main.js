@@ -86,13 +86,6 @@ $("#header").load("/sections/header.html", function ()
     });
 });
 
-// Load social icons
-$("#social-github").load("/assets/icons/brands/github.svg");
-$("#social-twitch").load("/assets/icons/brands/twitch.svg");
-$("#social-twitter").load("/assets/icons/brands/twitter.svg");
-$("#social-youtube").load("/assets/icons/brands/youtube.svg");
-$("#social-graphide").load("/assets/icons/brands/graphide.svg");
-
 // Load checkmark in cookie consent
 $("#cookie-checkmark").load("/assets/icons/checkmark.svg", function ()
 {
