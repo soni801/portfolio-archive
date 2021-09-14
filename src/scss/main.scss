@@ -248,45 +248,64 @@ hr
         text-align: center;
     }
 
-    .cycle
+    > div
     {
-        display: flex;
-        position: relative;
-        left: 0;
-        min-height: 25rem;
-        transition: 500ms ease;
+        display: grid;
 
         > h2
         {
-            position: absolute;
-            right: 0;
+            width: 100vw;
+            padding-right: 2rem;
+            grid-column: 1;
+            grid-row: 1;
+            color: rgba($light, .8);
+            text-align: right;
+            box-sizing: border-box;
+            text-shadow: rgba($dark, .3) 0 0 1rem;
         }
 
-        div
+        .cycle
         {
+            display: flex;
             position: relative;
-            width: 100vw;
-            overflow: hidden;
-            color: $light;
-            text-shadow: $dark 0 0 1rem;
+            left: 0;
+            min-height: 25rem;
+            grid-column: 1;
+            grid-row: 1;
+            transition: 500ms ease;
 
-            img
+            > h2
             {
                 position: absolute;
-                width: 100%;
-                z-index: -1;
-                filter: brightness(.5);
+                right: 0;
             }
 
             div
             {
-                position: absolute;
-                bottom: 0;
-                padding: 2rem;
+                position: relative;
+                width: 100vw;
+                overflow: hidden;
+                color: $light;
+                text-shadow: $dark 0 0 1rem;
 
-                .date, .subject
+                img
                 {
-                    opacity: .5;
+                    position: absolute;
+                    width: 100%;
+                    z-index: -1;
+                    filter: brightness(.5);
+                }
+
+                div
+                {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 2rem;
+
+                    .date, .subject
+                    {
+                        opacity: .5;
+                    }
                 }
             }
         }
