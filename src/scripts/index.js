@@ -15,7 +15,7 @@ $("#social-graphide").load("/assets/icons/brands/graphide.svg");
 // Load recent projects
 for (const project of projects.school)
 {
-    document.querySelector("#school-projects").innerHTML += `
+    document.querySelector("#school-projects .cycle").innerHTML += `
         <div>
             <img src="${project.image}" alt="Image of ${project.title}">
             <div>
@@ -30,7 +30,7 @@ for (const project of projects.school)
 
 for (const project of projects.personal)
 {
-    document.querySelector("#personal-projects").innerHTML += `
+    document.querySelector("#personal-projects .cycle").innerHTML += `
         <div>
             <img src="${project.image}" alt="Image of ${project.title}">
             <div>
@@ -48,7 +48,7 @@ function cycleProjects()
     setTimeout(function ()
     {
         {
-            const element = document.querySelector("#school-projects");
+            const element = document.querySelector("#school-projects .cycle");
 
             if (projectsOffset[0] > maxCycle[0]) element.style.left = (projectsOffset[0] -= 100) + "vw";
             else element.style.left = (projectsOffset[0] = 0) + "vw";
@@ -56,7 +56,7 @@ function cycleProjects()
 
         setTimeout(function ()
         {
-            const element = document.querySelector("#personal-projects");
+            const element = document.querySelector("#personal-projects .cycle");
 
             if (projectsOffset[1] > maxCycle[1]) element.style.left = (projectsOffset[1] -= 100) + "vw";
             else element.style.left = (projectsOffset[1] = 0) + "vw";

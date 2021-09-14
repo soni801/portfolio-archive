@@ -242,7 +242,13 @@ hr
 {
     align-self: flex-start;
 
-    #school-projects, #personal-projects
+    > h2
+    {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .cycle
     {
         display: flex;
         position: relative;
@@ -261,7 +267,6 @@ hr
             position: relative;
             width: 100vw;
             overflow: hidden;
-
             color: $light;
             text-shadow: $dark 0 0 1rem;
 

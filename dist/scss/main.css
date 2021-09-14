@@ -1,2 +1,231 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");html{scroll-behavior:smooth;overflow-x:hidden}body{display:flex;flex-direction:column;align-items:center;background:#f4f4f9;color:#273e47;font-family:Poppins,sans-serif}body,h6{margin:0}h6{position:relative;left:20px;text-transform:uppercase;font-size:1rem;font-weight:400}h6:before{content:"";display:block;position:absolute;top:.75rem;left:-20px;width:15px;border-top:1px solid #273e47}h1{margin:0}hr{width:8ch;border:none;border-top:1px solid rgba(39,62,71,.6)}#header{display:flex;justify-content:space-between;align-items:center;width:100%;box-sizing:border-box;padding:1rem;font-size:1.1rem;font-weight:700;letter-spacing:.15ch;text-transform:uppercase}#header div{opacity:0;gap:5ch;transform:translateX(3rem);transition:.2s ease,transform 1s cubic-bezier(.24,-.95,1,.42)}#header div.visible{opacity:1;transform:none;transition:.2s ease}#header a{color:#273e47;text-decoration:none;transition:.1s ease;cursor:pointer}#header span{display:flex;cursor:pointer}#header span svg{height:2rem;fill:#273e47}#header .highlighted{color:#3ba3a1;font-weight:900}#cookie{display:flex;gap:1rem;position:fixed;bottom:2rem;left:2rem;text-transform:uppercase;font-weight:700;font-size:.9rem;transition:.3s ease}#cookie,#cookie p{margin:0}#cookie #cookie-checkmark{width:2rem;stroke:#273e47;cursor:pointer}#introduction{display:flex;align-items:center;justify-content:space-between;width:80vw;max-width:75rem;margin-top:3rem}#introduction #introduction-paragraph{width:40ch}#introduction #introduction-paragraph #about-me-button{padding:.6em 1.3em;background:#3ba3a1;color:#f4f4f9;text-transform:uppercase;text-decoration:none;font-weight:600}#introduction #introduction-paragraph a+h6{margin-top:3rem;color:rgba(39,62,71,.4)}#introduction #introduction-paragraph a+h6:before{border-color:rgba(39,62,71,.4)}#introduction #introduction-paragraph #social-icons{display:flex;align-items:center;gap:1rem;margin-top:.5rem}#introduction #introduction-paragraph #social-icons a{display:flex;height:2.3rem;aspect-ratio:1;fill:rgba(59,163,161,.4)}#introduction #introduction-paragraph #social-icons a#social-youtube #cutout{fill:#f4f4f9}#introduction #introduction-paragraph #social-icons a#social-graphide{stroke:rgba(59,163,161,.4)}#introduction img{width:50ch}@media (max-width:50rem){#introduction{flex-direction:column}}#about-me{padding:2ch;max-width:70ch;text-align:center}#recent-projects{align-self:flex-start}#recent-projects #personal-projects,#recent-projects #school-projects{display:flex;position:relative;left:0;min-height:25rem;transition:.5s ease}#recent-projects #personal-projects>h2,#recent-projects #school-projects>h2{position:absolute;right:0}#recent-projects #personal-projects div,#recent-projects #school-projects div{position:relative;width:100vw;overflow:hidden;color:#f4f4f9;text-shadow:#273e47 0 0 1rem}#recent-projects #personal-projects div img,#recent-projects #school-projects div img{position:absolute;width:100%;z-index:-1;filter:brightness(.5)}#recent-projects #personal-projects div div,#recent-projects #school-projects div div{position:absolute;bottom:0;padding:2rem}#recent-projects #personal-projects div div .date,#recent-projects #personal-projects div div .subject,#recent-projects #school-projects div div .date,#recent-projects #school-projects div div .subject{opacity:.5}#header .useless,.useless>*>*{fill:none;cursor:unset}
+/* STYLESHEET TABLE OF CONTENTS
+    1 Setup
+        1.1 Variables
+        1.2 Fonts
+        1.3 HTML and body styling
+    2 General elements
+        2.1 Tags
+        2.2 Titles
+        2.3 Separators
+    3 Reusable sections
+        3.1 Header
+        3.2 Cookie consent
+    4 Specific sections
+        4.1 Introduction section
+        4.2 About me section
+        4.3 Recent projects
+    5 Useless elements
+ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background: #F4F4F9;
+  color: #273E47;
+  font-family: "Poppins", sans-serif;
+}
+
+h6 {
+  position: relative;
+  left: 20px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+h6::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.75rem;
+  left: -20px;
+  width: 15px;
+  border-top: 1px solid #273E47;
+}
+
+h1 {
+  margin: 0;
+}
+
+hr {
+  width: 8ch;
+  border: none;
+  border-top: 1px solid rgba(39, 62, 71, 0.6);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.15ch;
+  text-transform: uppercase;
+}
+#header div {
+  opacity: 0;
+  gap: 5ch;
+  transform: translateX(3rem);
+  transition: 200ms ease, transform 1s cubic-bezier(0.24, -0.95, 1, 0.42);
+}
+#header div.visible {
+  opacity: 1;
+  transform: none;
+  transition: 200ms ease;
+}
+#header a {
+  color: #273E47;
+  text-decoration: none;
+  transition: 100ms ease;
+  cursor: pointer;
+}
+#header span {
+  display: flex;
+  cursor: pointer;
+}
+#header span svg {
+  height: 2rem;
+  fill: #273E47;
+}
+#header .highlighted {
+  color: #3BA3A1;
+  font-weight: 900;
+}
+
+#cookie {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: 300ms ease;
+}
+#cookie p {
+  margin: 0;
+}
+#cookie #cookie-checkmark {
+  width: 2rem;
+  stroke: #273E47;
+  cursor: pointer;
+}
+
+#introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  max-width: 75rem;
+  margin-top: 3rem;
+}
+#introduction #introduction-paragraph {
+  width: 40ch;
+}
+#introduction #introduction-paragraph #about-me-button {
+  padding: 0.6em 1.3em;
+  background: #3BA3A1;
+  color: #F4F4F9;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+#introduction #introduction-paragraph a + h6 {
+  margin-top: 3rem;
+  color: rgba(39, 62, 71, 0.4);
+}
+#introduction #introduction-paragraph a + h6::before {
+  border-color: rgba(39, 62, 71, 0.4);
+}
+#introduction #introduction-paragraph #social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+#introduction #introduction-paragraph #social-icons a {
+  display: flex;
+  height: 2.3rem;
+  aspect-ratio: 1;
+  fill: rgba(59, 163, 161, 0.4);
+}
+#introduction #introduction-paragraph #social-icons a#social-youtube #cutout {
+  fill: #F4F4F9;
+}
+#introduction #introduction-paragraph #social-icons a#social-graphide {
+  stroke: rgba(59, 163, 161, 0.4);
+}
+#introduction img {
+  width: 50ch;
+}
+@media (max-width: 50rem) {
+  #introduction {
+    flex-direction: column;
+  }
+}
+
+#about-me {
+  padding: 2ch;
+  max-width: 70ch;
+  text-align: center;
+}
+
+#recent-projects {
+  align-self: flex-start;
+}
+#recent-projects > h2 {
+  width: 100vw;
+  text-align: center;
+}
+#recent-projects .cycle {
+  display: flex;
+  position: relative;
+  left: 0;
+  min-height: 25rem;
+  transition: 500ms ease;
+}
+#recent-projects .cycle > h2 {
+  position: absolute;
+  right: 0;
+}
+#recent-projects .cycle div {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  color: #F4F4F9;
+  text-shadow: #273E47 0 0 1rem;
+}
+#recent-projects .cycle div img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+#recent-projects .cycle div div {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+}
+#recent-projects .cycle div div .date, #recent-projects .cycle div div .subject {
+  opacity: 0.5;
+}
+
+#header .useless,
+.useless > * > * {
+  fill: none;
+  cursor: unset;
+}
+
 /*# sourceMappingURL=/main.css.map */
