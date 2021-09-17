@@ -80,12 +80,12 @@ export const projects = {
   ],
   "personal": [
     {
-      "image": "/assets/images/projects/personal/graphide.jpg",
+      "image": "/assets/images/projects/personal/graphide.jpg?v=2",
       "title": "graphide studios",
       "content": "graphide studios er et lite programvareutviklingsstudio som jeg og noen venner laget."
     },
     {
-      "image": "/assets/images/projects/personal/redsea.jpg",
+      "image": "/assets/images/projects/personal/redsea.jpg?v=2",
       "title": "Redsea",
       "content": "Redsea Productions er et lite programvareutviklingsstudio som jeg og noen venner laget."
     },
