@@ -285,6 +285,7 @@ hr
                 img
                 {
                     position: absolute;
+                    left: 0;
                     width: 100%;
                     z-index: -1;
                     filter: brightness(.5);
@@ -295,6 +296,7 @@ hr
                     position: absolute;
                     bottom: 0;
                     padding: 2rem;
+                    box-sizing: border-box;
 
                     .date, .subject
                     {
@@ -303,6 +305,11 @@ hr
                 }
             }
         }
+    }
+
+    #personal-projects
+    {
+        text-align: right;
     }
 }
 
