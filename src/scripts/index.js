@@ -3,7 +3,7 @@ const cycleSpeed = 5000;
 const maxCycle = [-1000, -300];
 
 // Import projects
-import { projects } from "/assets/projects.js";
+import { projects } from "../assets/projects.js";
 
 // Load social icons
 $("#social-github").load("/assets/icons/brands/github.svg");
