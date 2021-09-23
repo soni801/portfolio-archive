@@ -13,8 +13,24 @@ projects.school.forEach(function (e)
 
 document.querySelectorAll("#projects-list h1").forEach(function (e)
 {
+    const next = e.nextElementSibling.style;
+
     e.addEventListener("click", function ()
     {
-        e.nextElementSibling.style.display = e.nextElementSibling.style.display === "initial" ? "none" : "initial";
+        if (next.display === "inline-block")
+        {
+            next.opacity = "0";
+            next.transform = "translateY(-5rem)";
+            setTimeout(function () { next.display = "none"; }, 300);
+        }
+        else
+        {
+            next.display = "inline-block";
+            setTimeout(function ()
+            {
+                next.opacity = "1";
+                next.transform = "translateY(0)";
+            }, 100);
+        }
     });
 });

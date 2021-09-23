@@ -249,11 +249,16 @@ hr {
 }
 #projects-list h1 {
   font-size: 5rem;
+  user-select: none;
   cursor: pointer;
 }
 #projects-list p {
-  font-size: 1.5rem;
   display: none;
+  max-width: 50ch;
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: 300ms ease;
 }
 
 #header .useless,
