@@ -322,8 +322,19 @@ hr
 #projects-list
 {
     padding: 4rem;
-    font-size: 3rem;
     text-align: center;
+
+    h1
+    {
+        font-size: 5rem; // TODO: Should be 8rem
+        cursor: pointer;
+    }
+
+    p
+    {
+        font-size: 1.5rem;
+        display: none;
+    }
 }
 
 // 5 Useless elements
