@@ -1,9 +1,14 @@
-#social-icons
-{
-    gap: .5rem;
+// Import variables
+@use "../../_variables.scss";
 
-    *
-    {
-        width: 4rem;
-    }
+#social-icons > *
+{
+    display: flex;
+    height: 2.3rem;
+    aspect-ratio: 1;
+}
+
+#about-me > p
+{
+    @apply py-3;
 }
